@@ -1,0 +1,121 @@
+:root {
+  --paleblue: hsl(225, 100%, 94%);
+  --brightblue: hsl(245, 75%, 52%);
+  --verypaleblue: hsl(225, 100%, 98%);
+  --desaturatedblue: hsl(224, 23%, 55%);
+  --darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--desaturatedblue);
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 25rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0 12px 8px var(--desaturatedblue);
+}
+
+#backsplash {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 24px 24px 0 0;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--darkblue);
+  margin: 2rem 0 1rem;
+}
+
+.desc {
+  font-weight: 500;
+  margin: 1rem 2rem;
+}
+
+.change-btn {
+  color: var(--brightblue);
+  margin-right: 1rem;
+  transition: opacity 0.3s;
+}
+
+.music-logo {
+  margin-left: 1rem;
+}
+
+.plan-container {
+  display: flex;
+  background-color: var(--verypaleblue);
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2.5rem;
+  border-radius: 14px;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+.plan-type {
+  font-weight: 700;
+  margin: 1.75rem 0 0;
+  color: var(--darkblue);
+}
+
+.plan-pricing {
+  margin: 0 0 1.75rem;
+}
+
+.payment-btn {
+  background-color: var(--brightblue);
+  margin: 1.5rem 2.5rem;
+  border-radius: 12px;
+  transition: opacity 0.3s;
+  box-shadow: 0 12px 8px var(--paleblue);
+}
+
+.payment-text {
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  font-weight: 700;
+  margin: 0 0 3rem;
+  transition: color 0.3s;
+  font-size: 16px;
+}
+
+.change-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  border-bottom: none;
+}
+
+.payment-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
+  color: var(--darkblue);
+}
