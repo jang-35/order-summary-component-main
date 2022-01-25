@@ -9,6 +9,9 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   background-image: url(images/pattern-background-desktop.svg);
+  background-color: var(--paleblue);
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 p {
   font-size: 16px;
